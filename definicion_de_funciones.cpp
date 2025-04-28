@@ -19,6 +19,7 @@ Aplica XOR entre dos arreglos de bytes (RGB) y devuelve un nuevo arreglo resulta
     return resultado;
 }
 
+"carga una imagen BMP en memoria como un arreglo dinámico de bytes en formato RGB (sin canal alfa), y además devuelve el ancho y alto de la imagen"
 unsigned char* loadPixels(QString input, int &width, int &height) {
     QImage imagen(input);
     if (imagen.isNull()) {
